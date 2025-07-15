@@ -67,6 +67,7 @@ print("hello world!")
 
 # git commands
 
+we use . at the end to include all files in a folder
 * git init - turn folder into git repo 
 * git status - get the status of the repo
 * git add - add changes to staging area
