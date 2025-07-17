@@ -14,4 +14,3 @@ def printList(menuItems, menuName):
     for x in range(len(menuItems)):
         print(str(x + 1) + " - " + menuItems[x])
 
-def checkInput()
