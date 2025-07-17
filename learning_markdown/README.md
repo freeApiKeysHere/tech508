@@ -72,3 +72,7 @@ we use . at the end to include all files in a folder
 * git status - get the status of the repo
 * git add - add changes to staging area
 * git commit - record the changes to the repo 
+* git diff - see difference between gits
+* git checkout - view older commits, go back to main branch to revet to latest commit
+* 
+
