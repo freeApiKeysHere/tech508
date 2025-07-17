@@ -133,26 +133,32 @@ def orderTask():
     # level 4
 
     # Add more to this program. Recommended ways are: Only allow input that is within the list, Add quantities of order etc.
-print("Main menu - select the task with the correct number")
-print("1 - shopping list task")
-print("2 - game task")
-print("3 - dict task")
-print("4 - mixture task")
-print("5 - userDetail task")
 
-choice = input("Enter a number (1–5): ")
+while True:
+    print("Main menu - select the task with the correct number")
+    print("1 - shopping list task")
+    print("2 - game task")
+    print("3 - dict task")
+    print("4 - mixture task")
+    print("5 - userDetail task")
+    print("6 - exit")
+
+    choice = input("Enter a number (1–6): ")
 
 
-match choice:
-    case "1":
-        shoppingList()
-    case "2":
-        game()
-    case "3":
-        dictTask()
-    case "4":
-        mixTask()
-    case "5":
-        userDeets()
-    case _:
-        print("Invalid choice. Please select 1–5.")
+    match choice: # switch staments
+        case "1":
+            shoppingList()
+        case "2":
+            game()
+        case "3":
+            dictTask()
+        case "4":
+            mixTask()
+        case "5":
+            userDeets()
+        case "6":
+            print("exiting" )
+            break
+        case _:
+            print("Invalid choice. Please select 1–6.")
