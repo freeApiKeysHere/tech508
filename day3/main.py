@@ -20,20 +20,20 @@ def shoppingList():
     shopping_list.pop()
     print(shopping_list)
 
-def userDeets():
+def mixTask():
     user_details_list = userInput() # returns list with 4 elements: name, age, dob, height
     print(user_details_list[0:3])
     if(type(user_details_list[1]) == int):
         print("age is an int")
     print(f"height: {user_details_list[3]}")
 
-def mixTask():
+def sliceTask():
     mixture = [1, 2, 3, "one", "two", "three"]
     print(mixture)
-
     print(mixture[1:3])
     print(mixture[0:len(mixture)-1:2])
     print(mixture[-1:-3:-1])
+
 
 
 def game():
@@ -140,13 +140,13 @@ while True:
     print("2 - game task")
     print("3 - dict task")
     print("4 - mixture task")
-    print("5 - userDetail task")
+    print("5 - slice task")
     print("6 - exit")
 
     choice = input("Enter a number (1–6): ")
 
 
-    match choice: # switch staments
+    match choice: # switch statements
         case "1":
             shoppingList()
         case "2":
@@ -156,7 +156,7 @@ while True:
         case "4":
             mixTask()
         case "5":
-            userDeets()
+            sliceTask()
         case "6":
             print("exiting" )
             break

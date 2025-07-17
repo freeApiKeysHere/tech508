@@ -4,7 +4,7 @@ c = str("dog")
 # '==' is a comparison operator that is used to check if 2 values are equal eg '5 == a' is true
 
 def add(x,y):
-    return(x+y)
+    return x+y
 
 def sub(x,y):
     return(x-y)
