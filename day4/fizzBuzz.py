@@ -1,15 +1,4 @@
-# for x in range(1,101):
-#     #print(x)
-#     printStr = ""
-#     if x % 3 == 0:
-#         printStr = "Fizz"
-#     if x % 5 == 0:
-#         printStr += "Buzz"
-#     if printStr == "":
-#         print(x)
-#     else:
-#         print(printStr)
-
+import time
 def fizzBuzzFunc(x: int = 3, y: int = 5):
     for i in range(1, 101):
         # print(x)
@@ -22,5 +11,6 @@ def fizzBuzzFunc(x: int = 3, y: int = 5):
             print(i)
         else:
             print(printStr)
+
 
 fizzBuzzFunc()

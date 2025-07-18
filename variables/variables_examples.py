@@ -7,34 +7,34 @@ def add(x,y):
     return x+y
 
 def sub(x,y):
-    return(x-y)
+    return x-y
 
 def mult(x,y):
-    return(x*y)
+    return x*y
 
 def div(x,y):
-    return(x/y)
+    return x/y
 
 def mod(x,y):
-    return(x%y)
+    return x%y
 
 def gr8Than():
     print("comparing 3 and 2 with '3 > 2'")
     if(3>2):
         print("3 is greater than 2")
-    return
+
 
 def lessThan():
     print("comparing 3 and 2 with '2 < 3'")
     if(2<3):
         print("2 is less than 3")
-    return
+
 
 def isEqual():
     print("comparing 2 and 2 with '=='")
     if (2==2):
         print("2 is equal to 2")
-        return
+
 
 def notEqual():
     print("comparing 2 and 4 with '!='")

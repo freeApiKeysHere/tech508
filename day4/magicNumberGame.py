@@ -74,5 +74,5 @@ def magicNumGame(magic_number: int, counter: int, proximity: bool = False, waste
 # showMagic - bool
 #   optional, default False, setting to True will reveal magic_number after the user has used up their guesses
 
-magicNumGame(180, 5, wasted=True)
+magicNumGame(180, 5, wasted=True, rndm=True, showMagic=True)
 
