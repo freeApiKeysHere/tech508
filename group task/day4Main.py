@@ -5,7 +5,7 @@ def print_something_v2(x):
     print(x)
 
 def greet(x):
-    print(f"Hello, my name is {x}")
+    print(f"Hello, my name is " + x)
 
 def addition(int1, int2):
     return int1 + int2
@@ -27,4 +27,4 @@ def division(x: int = 2, y: int = 5) -> float:
     return x/y
 a = 4
 b = 6
-print(division())
+

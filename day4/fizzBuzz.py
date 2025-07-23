@@ -11,6 +11,4 @@ def fizzBuzzFunc(x: int = 3, y: int = 5):
             print(i)
         else:
             print(printStr)
-
-
 fizzBuzzFunc()

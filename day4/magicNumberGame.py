@@ -21,10 +21,17 @@ import random
 
 # User story 6
 # As a user, I would like to know the magic number at the end of the game if I still haven't guessed correctly and I've used up all my tries.
-def magicNumGame(magic_number: int, counter: int, proximity: bool = False, wasted: bool = False, viewTries: bool = False, rndm: bool = False, showMagic: bool = False):
+def magicNumGame(magic_number: int, counter: int = 5, proximity: bool = False, wasted: bool = False, viewTries: bool = False, rndm: bool = False, showMagic: bool = False):
     if rndm:
         magic_number = random.randint(0, 999)
+
     while True:
+        if counter <= 0:
+            print("LOSER!")
+            if showMagic:
+                print(f"The magic number was: {magic_number}")
+            break
+
         if wasted:
             try:
                 x = int(input("The magic number is a whole number. Enter a your guess: "))
@@ -33,6 +40,13 @@ def magicNumGame(magic_number: int, counter: int, proximity: bool = False, waste
                 continue
         else:
             x = input("The magic number is a whole number. Enter a your guess: ")
+            if x.isdigit():
+                x = int(x)
+            else:
+                print("Invalid Input")
+                counter -= 1
+                continue
+
         if x != magic_number:
             counter -= 1
             print("You guessed WRONG")
@@ -46,18 +60,14 @@ def magicNumGame(magic_number: int, counter: int, proximity: bool = False, waste
         else:
             print("WINNER!")
             break
-        if counter <= 0:
-            print("LOSER!")
-            if showMagic == True:
-                print(f"The magic number was: {magic_number}")
-            break
 
+magicNumGame(180)
 # magicNumGame params:
 # magic_number - int
 #   required, defines the magic number to be guessed
 #
 # counter - int
-#   required, defines the number of tries a user has
+#   optional, default 5, defines the number of tries a user has
 #
 # proximity - bool
 #   optional, default False, setting to True will prompt the user to guess higher or lower
@@ -74,5 +84,5 @@ def magicNumGame(magic_number: int, counter: int, proximity: bool = False, waste
 # showMagic - bool
 #   optional, default False, setting to True will reveal magic_number after the user has used up their guesses
 
-magicNumGame(180, 5, wasted=True, rndm=True, showMagic=True)
+
 
