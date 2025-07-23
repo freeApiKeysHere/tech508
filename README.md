@@ -32,7 +32,7 @@ Note: Hyphens can be used instead of stars
 
 ## Images
 
-![woat](../images/Yelena%20face.png)
+![woat](images/Yelena face.png)
 
 ## Links
 
@@ -40,7 +40,7 @@ Website Link:
 [Click Me!](https://youtu.be/dQw4w9WgXcQ?si=6Ha9QcCJA09N7EY2)
 
 File/folder Link: 
-[asdf.py](../asdf.py)
+[asdf.py](asdf.py)
 
 ## Code
 
